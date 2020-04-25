@@ -20,7 +20,7 @@
 **/
 
 #presentacion {
-  background: url(../images/bg-presentacion.png);
+  background-image: url(../images/bg-presentacion.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 525px;
@@ -62,7 +62,7 @@
 
 .sobre-mi-contenido {
   font-style: normal;
-
+  text-align: justify;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -114,11 +114,16 @@
   background: #ffd233;
 }
 #portafolio > .contenedor {
-  max-width: 598px;
+  /*max-width: 700px;*/
   padding-bottom: 50px;
 }
+#portafolio > .contenedor .col-4 {
+  max-width: 140px;
+}
+
 .proyecto {
   position: relative;
+  text-align: center;
 }
 .proyecto:hover .proyecto-descripcion {
   transition: visibility 0.5s, opacity 0.2s linear;
@@ -161,6 +166,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
+  flex-wrap: wrap;
 }
 .clientes-group > div {
   margin: 10px;
@@ -201,4 +207,42 @@ textarea.input-form-control {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #portafolio > .contenedor .row {
+    flex-wrap: wrap;
+  }
+  #portafolio > .contenedor .col-4 {
+    max-width: 250px;
+    width: 50%;
+  }
+  #presentacion {
+    height: 490px;
+    background-image: url(../images/bg-presentacion-mob.png);
+  }
+
+  .presentacion-nombre {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 13px 0px;
+  }
+  .cabecera-titulo > h1{
+    font-size: 50px;
+  }
+  .contenedor-boton{
+    text-align: center;
+  }
+
+  #contacto .formulario .col-2{
+    width: 100%;
+  }
+  #contacto .formulario .row{
+    flex-wrap: wrap;
+  }
+
 }

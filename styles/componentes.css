@@ -16,7 +16,8 @@ body,.input-form-control{
 .row {    
   display: -ms-flex;
   display: -webkit-flex;
-  display: flex;  
+  display: flex; 
+  justify-content: center;  
 }
 
 .col-1 {
