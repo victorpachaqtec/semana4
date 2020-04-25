@@ -1,0 +1,49 @@
+body,.input-form-control{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover{
+    transition: all 0.5s ease;
+    box-shadow:0 4px 16px rgb(30 31 33);
+}
+.contenedor{
+    padding-left: 41px;
+    padding-right: 41px;
+    margin: auto;
+    max-width: 872px;
+}
+
+.row {    
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;  
+}
+
+.col-1 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-2 {
+  width: 50%;
+  padding: 10px 15px;
+  
+}
+.col-4 {
+  width: 25%;
+  padding: 10px 15px;
+  
+}
+
+section{
+    padding-bottom: 50px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+progress { background-color: #ffffff; border: 1px; height: 38px; width: 200px; border-radius: 9px; color: #000000;}
+progress::-webkit-progress-bar { background-color: #ffffff; border-radius: 9px;}
+progress::-webkit-progress-value { background: #57EFF9;; border-radius: 9px;}
+progress::-moz-progress-bar { background: #57EFF9;; border-radius: 9px;}
